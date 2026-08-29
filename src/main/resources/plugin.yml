@@ -1,0 +1,53 @@
+name: MeowFFACore
+version: 1.0.0
+main: eu.fakemoon.meowffa.core.MeowFFACorePlugin
+api-version: '1.21'
+author: fakemoon
+description: Unified MeowFFA core with embedded Kits, weapons, reroller, duels, screenshare and combat log.
+softdepend: [TAB, PlaceholderAPI, Vault, WorldEdit, FastAsyncWorldEdit, WorldGuard]
+commands:
+  meowffacore:
+    aliases: [meowffa, ffacore]
+    description: MeowFFA core commands.
+  spawn: {description: Teleport to the FFA spawn.}
+  afk: {description: Teleport to the AFK area or manage its NPC warp.}
+  afkpool: {description: Configure the AFK reward pool., permission: meowffa.admin}
+  setspawn: {description: Set the FFA spawn., permission: meowffa.admin}
+  daily: {description: Claim your daily token reward.}
+  discord: {description: Show the Discord link.}
+  store: {description: Show the store link.}
+  tokens: {description: View or manage MeowFFA tokens.}
+  bounty: {description: Place or view a bounty.}
+  killstreak: {aliases: [ks], description: View killstreaks.}
+  stats: {aliases: [statistics], description: View or reset your statistics.}
+  sb: {description: Toggle the MeowFFA scoreboard.}
+  kits: {aliases: [kitmenu], description: Open the Kits menu., permission: kits.use}
+  kitlayouts: {aliases: [kitlayout, layouts], description: Customize kit layouts., permission: kits.use}
+  kit: {description: Admin kit management., permission: kits.admin}
+  coinshop: {aliases: [kitshop, shop], description: Open the Kits coin shop., permission: kits.use}
+  coins: {aliases: [balance, bal], description: View Kits coins., permission: kits.use}
+  rig: {description: Rig the MaceReroller result., permission: macerr.admin}
+  ffaweapons: {aliases: [ffaw], description: FFA weapon administration., permission: ffaweapons.admin}
+  macerr: {aliases: [mace], description: Mace reroller administration., permission: macerr.admin}
+  1v1room: {aliases: [onevoneroom], description: Manage 1v1 rooms., permission: onevone.admin}
+  1v1leave: {aliases: [duelleave, leave1v1], description: Leave a waiting 1v1 room., permission: onevone.leave}
+  screenshare: {aliases: [ss], description: Manage a screenshare., permission: screenshare.staff}
+  combatlog: {aliases: [combat, combattag], description: View combat-tag status.}
+permissions:
+  meowffa.admin: {default: op}
+  meowffa.tokens.admin: {default: op}
+  meowffa.stats.admin: {default: op}
+  kits.use: {default: true}
+  kits.admin: {default: op}
+  kits.cooldown.bypass: {default: op}
+  ffaweapons.admin: {default: op}
+  ffaweapons.bbc: {default: op}
+  macerr.admin: {default: op}
+  onevone.admin: {default: op}
+  onevone.build: {default: op}
+  onevone.leave: {default: true}
+  screenshare.staff: {default: op}
+  screenshare.bypass: {default: false}
+  combatlog.status: {default: true}
+  combatlog.admin: {default: op}
+  combatlog.bypass: {default: false}

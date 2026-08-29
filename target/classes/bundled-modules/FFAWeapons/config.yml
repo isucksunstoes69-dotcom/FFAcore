@@ -1,0 +1,87 @@
+# FFAWeapons configuration — every ability number lives here.
+# Apply changes with /ffaweapons reload (or a restart).
+# Note: items already handed out keep their old lore text, but their abilities
+# always use the CURRENT values below. Re-grab from /ffaweapons for fresh lore.
+
+weapons:
+  dash-spear:
+    dash-speed: 3.0
+    cooldown-seconds: 15
+  dash-sword:
+    dash-speed: 2.5
+    cooldown-seconds: 20
+  dash-mace:
+    dash-speed: 3.5
+    cooldown-seconds: 20
+  adrenaline-blade:
+    cooldown-seconds: 35
+    absorption-seconds: 12
+    yellow-hearts: 4
+  warden-blade:
+    damage: 8.0          # 8.0 = 4 hearts
+    range: 15
+    cooldown-seconds: 30
+  breeze-mace:
+    dash-speed: 3.0
+    dashes: 3            # charges before the cooldown starts
+    cooldown-seconds: 15
+  venom-sword:
+    chance: 0.30         # 0.30 = 30% per hit
+    poison-seconds: 4
+    poison-amplifier: 1  # 1 = Poison II
+  grapple-bow:
+    dash-speed: 3.0
+    cooldown-seconds: 10
+  cobweb-axe:
+    chance: 0.30
+    web-seconds: 4
+  levo-axe:
+    radius: 8.0          # stained-glass sphere radius in blocks
+    duration-seconds: 30
+    cooldown-seconds: 60
+  zeus-sword:
+    chance: 0.10         # 10% per hit
+    damage: 5.0          # true damage: bypasses armor, but yellow absorption hearts still absorb it
+  lifesteal-sword:
+    chance: 0.10         # 10% per hit
+    heal: 2.0            # 2.0 health = 1 heart
+  meow-blade:
+    cat-speed: 0.65      # blocks per tick; gravity gives the cat an arrow-like arc
+    flight-seconds: 3
+    explosion-power: 2.5 # visual/damage explosion; never damages terrain
+    cooldown-seconds: 20
+  stun-axe:
+    shield-stun-seconds: 7
+    cooldown-seconds: 15
+  mirror-shield:
+    duration-seconds: 3
+    reflected-damage-multiplier: 1.0
+    cooldown-seconds: 40
+  pulse-shield:
+    knockback: 2.2
+    visual-radius: 5.0
+    cooldown-seconds: 60
+  meow-shield:
+    barrage-cooldown-seconds: 25
+    barrage-count: 6
+    barrage-cat-speed: 0.72
+    barrage-explosion-power: 2.2
+    barrage-damage: 4.0       # true damage dealt in the cat blast radius
+    barrage-flight-seconds: 3
+    summon-cooldown-seconds: 45
+    summon-count: 8
+    summon-duration-seconds: 10
+    summon-damage: 1.0       # 1.0 health = 0.5 hearts per cat attack
+    summon-attack-interval-ticks: 20
+    last-target-seconds: 30
+  bbc-blade:
+    range: 30
+    damage: 20.0         # 10 hearts of admin true damage, with no block damage
+    cooldown-seconds: 20
+  thunder-spear:
+    range: 30
+    damage: 5.0          # visual-only strike + this damage, no fire
+    cooldown-seconds: 25
+  webcleaver:
+    radius: 10
+    cooldown-seconds: 10

@@ -1,0 +1,56 @@
+discord-url: "https://discord.gg/CHANGE-ME"
+store-url: "https://meowffa.craftingstore.net"
+spawn:
+  world: "world"
+  x: 0.5
+  y: 80.0
+  z: 0.5
+  yaw: 0.0
+  pitch: 0.0
+afk:
+  world: ""
+  x: 0.0
+  y: 0.0
+  z: 0.0
+  yaw: 0.0
+  pitch: 0.0
+  npc-uuid: ""
+death-respawn:
+  world: "world"
+  x: 662.0
+  y: 108.0
+  z: 999.0
+daily:
+  cooldown-hours: 24
+  tokens: 10
+  rewards: []
+tokens:
+  starting-balance: 0
+bounties:
+  minimum: 10
+  killstreak-multiplier: 1
+tab:
+  enabled: true
+  header:
+    - "<gradient:#a1c4fd:#c2e9fb><bold>ᴍᴇᴏᴡꜰꜰᴀ</bold></gradient>"
+    - ""
+    - "<gradient:#84fab0:#8fd3f4>ᴘʟᴀʏᴇʀꜱ</gradient> <gray>»</gray> <white>%online%</white>/<white>%max%</white>"
+  footer:
+    - ""
+    - "<gradient:#fdcbf1:#e6dee9>ꜱᴛᴏʀᴇ</gradient> <gray>»</gray> <aqua>%store%</aqua>"
+    - "<gradient:#fdcbf1:#e6dee9>ᴅɪꜱᴄᴏʀᴅ</gradient> <gray>»</gray> <aqua>%discord%</aqua>"
+scoreboard:
+  enabled: false
+  title: "<gradient:#a1c4fd:#c2e9fb><bold>ᴍᴇᴏᴡꜰꜰᴀ</bold></gradient>"
+  update-ticks: 20
+  health-under-name: true
+  health-objective: "Health"
+  health-display-name: "<#FCD05C>❤ <white>"
+  health-label: "<red>❤"
+afkpool:
+  enabled: false
+  world: ""
+  min: [0, 0, 0]
+  max: [0, 0, 0]
+  reward-interval-seconds: 300
+  rewards: []

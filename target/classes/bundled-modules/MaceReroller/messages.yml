@@ -1,0 +1,47 @@
+# MaceReroller messages. Values use MiniMessage formatting.
+# Placeholders use %name% syntax. Changes apply with /macerr reload.
+prefix: "<dark_gray>[<gold>MaceRR</gold>]</dark_gray> "
+
+command:
+  players-only: "<red>Players only."
+  reroll-started: "<green>Reroll started!"
+  usage-rig: "<red>Usage: /rig <victim> [recipient] or /rig now <player>"
+  player-offline: "<red>Player <white>%player%</white> is not online."
+  rig-started: "<green>Rigged reroll started — it will land on <gold>%player%</gold>."
+
+gui:
+  title: "<gold><bold>Reroll Item Pool</bold></gold>"
+  bundle-title: "<gold><bold>Reroll weapon bundle</bold></gold>"
+  bundle-lore-1: "<gray>Put up to <white>45 item stacks</white> above."
+  bundle-lore-2: "<gray>The winner receives <white>every entry</white>."
+  bundle-lore-3: "<gray>Close this menu to save."
+  cleared: "<yellow>Reroll bundle cleared. A bundle already in circulation remains tracked until its next reroll."
+  saved: "<green>Saved <gold>%count%</gold> bundle %items%. Send the bundle with <white>/macerr reroll</white> or <white>/rig <player></white>."
+
+error:
+  selected-holder: "<red>That weapon bundle belongs to the selected holder."
+  cannot-store: "<red>You can't store this item."
+  disabled: "<red>The reroller is disabled — <white>/macerr enable</white> first."
+  empty: "<red>The reroll weapon bundle is empty — add items with <white>/macerr item</white> first."
+  rolling: "<red>A reroll is already in progress."
+  blocked-target: "<red>%player% is in a blocked WorldGuard region and cannot receive the %item%."
+  no-eligible: "<red>No player is in an allowed world. The reroll is waiting."
+
+  reload-no-regions: "<yellow>Config reloaded. No blocked WorldGuard regions are configured."
+  reload-no-worldguard: "<red>Config reloaded, but WorldGuard is not installed. Rerolls will pause while blocked-regions is non-empty."
+  reload-ok: "<green>Config reloaded. Blocked regions: <white>%regions%</white>."
+  reload-missing-regions: "<yellow>WorldGuard connected, but these region IDs do not exist in any loaded world: <white>%regions%</white>."
+  disabled: "<yellow>Reroller disabled — the <gold>%item%</gold> was removed from circulation."
+  enabled: "<green>Reroller enabled. Send the bundle out with <white>/macerr reroll</white>."
+
+event:
+  holder-blocked: "<gold>%player%</gold> <gray>entered a blocked region. The bundle is rerolling."
+  thrown: "<gold>%player%</gold> <gray>threw the <gold>%item%</gold> away — rerolling!"
+  picked-up: "<gold>%player%</gold> <gray>picked up the <gold>%item%</gold>!"
+  destroyed: "<gray>The <gold>%item%</gold> was destroyed — rerolling!"
+  broken: "<gold>%player%</gold> <gray>broke a weapon from the <gold>%item%</gold> — rerolling the bundle!"
+  winner: "<gold>%player%</gold> <gray>now holds the <gold>%item%</gold>!"
+
+title:
+  rolling: "<gray>Rerolling the <gold>%item%</gold>..."
+  winner: "<gray>now holds the <gold>%item%</gold>!"

@@ -1,0 +1,23 @@
+name: MaceReroller
+version: 1.0.0
+main: eu.fakemoon.macerr.MaceRRPlugin
+api-version: '1.21'
+author: fakemoon
+description: Multi-item reroll bundle with rigged rolls and WorldGuard exclusions.
+softdepend: [WorldGuard]
+
+commands:
+  rig:
+    description: Reroll the full item bundle so it lands on a specific player (looks random).
+    permission: macerr.admin
+    usage: /rig <victim> [recipient] | /rig now <player>
+  macerr:
+    description: Mace reroller admin commands.
+    aliases: [mace]
+    permission: macerr.admin
+    usage: /macerr <item|items|pool|reroll|status|reload|enable|disable>
+
+permissions:
+  macerr.admin:
+    description: Manage the mace reroller.
+    default: op

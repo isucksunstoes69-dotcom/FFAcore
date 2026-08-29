@@ -1,0 +1,6 @@
+session-duration-seconds: 600
+freeze-on-request: true
+block-commands-while-frozen: true
+show-address-to-staff: false
+audit-log: true
+discord-url: "https://discord.gg/CHANGE-ME"

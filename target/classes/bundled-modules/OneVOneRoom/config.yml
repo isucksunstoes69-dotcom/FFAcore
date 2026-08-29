@@ -1,0 +1,10 @@
+# Seconds the winner remains inside to collect the loser's dropped items.
+loot-seconds: 30
+
+# Uses WorldGuard's dedicated PvP-denial event to allow only the exact two
+# registered fighters. Other plugins' cancellations are still respected.
+worldguard-override-duel-pvp: true
+
+display:
+  # Blocks above the top of the selected glass entrance.
+  height-offset: 1.6

@@ -1,0 +1,21 @@
+# MaceReroller configuration
+
+# Players who just lost the item can't randomly receive it again for this long.
+# Examples: "30m", "1h", "1d2h", "90s". Use "0" to disable.
+# /rig always bypasses this. If everyone online is still on no-repeat cooldown,
+# the roll falls back to including everyone (so the item never gets stuck).
+no-repeat: "10m"
+
+# If the current holder enters one of blocked-regions, withdraw the bundle and
+# immediately start a new reroll. Set false to keep the old recipient-only rule.
+reroll-holder-in-blocked-region: true
+
+# Players standing in these WorldGuard regions are never eligible to receive the
+# reroll item. Region IDs are case-insensitive; /rig obeys this restriction too.
+# If every online player is excluded, the reroll waits until somebody enters an
+# allowed region. Requires WorldGuard when this list is not empty.
+blocked-regions: []
+# Example:
+# blocked-regions:
+#   - spawn
+#   - safezone

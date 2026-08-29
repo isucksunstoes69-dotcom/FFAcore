@@ -1,0 +1,24 @@
+name: CombatLog
+version: 1.0.0
+main: eu.fakemoon.combatlog.CombatLogPlugin
+api-version: '1.21'
+author: fakemoon
+description: PvP combat tags displayed with a boss bar.
+softdepend: [WorldGuard]
+
+commands:
+  combatlog:
+    description: View or manage PvP combat tags.
+    aliases: [combat, combattag]
+    usage: /combatlog [status|reload|tag|untag]
+
+permissions:
+  combatlog.status:
+    description: View your combat-tag timer.
+    default: true
+  combatlog.admin:
+    description: Reload CombatLog and manage combat tags.
+    default: op
+  combatlog.bypass:
+    description: Never receive a PvP combat tag.
+    default: false

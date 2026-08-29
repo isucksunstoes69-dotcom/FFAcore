@@ -1,0 +1,18 @@
+name: ScreenShare
+version: 1.0.0
+main: eu.fakemoon.screenshare.ScreenSharePlugin
+api-version: '1.21'
+author: fakemoon
+description: Consent-based in-game staff screenshare and inspection workflow.
+softdepend: [WorldGuard]
+commands:
+  screenshare:
+    aliases: [ss]
+    description: Manage a staff screenshare session.
+    usage: /screenshare <player|accept|deny|inspect|inventory|ender|note|close|unfreeze>
+    permission: screenshare.staff
+permissions:
+  screenshare.staff:
+    default: op
+  screenshare.bypass:
+    default: false

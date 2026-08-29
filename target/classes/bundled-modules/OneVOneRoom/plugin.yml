@@ -1,0 +1,29 @@
+name: OneVOneRoom
+version: 1.0.0
+main: eu.fakemoon.onevone.OneVOnePlugin
+api-version: '1.21'
+author: fakemoon
+description: Colored-glass 1v1 portals with live room displays and timed winner looting.
+softdepend: [WorldEdit, FastAsyncWorldEdit, WorldGuard]
+
+commands:
+  1v1room:
+    description: Manage 1v1 rooms.
+    aliases: [onevoneroom]
+    permission: onevone.admin
+    usage: /1v1room <wand|create|entrance|delete|list|stop>
+  1v1leave:
+    description: Leave a 1v1 room while waiting for an opponent.
+    aliases: [duelleave, leave1v1]
+    permission: onevone.leave
+
+permissions:
+  onevone.admin:
+    description: Create and manage 1v1 rooms.
+    default: op
+  onevone.build:
+    description: Edit arena blocks while that room is empty (portal glass stays protected).
+    default: op
+  onevone.leave:
+    description: Leave a 1v1 room before the fight begins.
+    default: true

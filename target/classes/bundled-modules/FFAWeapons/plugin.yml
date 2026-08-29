@@ -1,0 +1,22 @@
+name: FFAWeapons
+version: 1.0.0
+main: eu.fakemoon.ffaweapons.FFAWeaponsPlugin
+api-version: '1.21'
+author: fakemoon
+description: Custom weapon set for spear/mace FFA.
+softdepend: [WorldEdit, FastAsyncWorldEdit]
+
+commands:
+  ffaweapons:
+    description: FFA weapons GUI and blacklist management.
+    aliases: [ffaw]
+    permission: ffaweapons.admin
+    usage: /ffaweapons [wand|blacklist]
+
+permissions:
+  ffaweapons.admin:
+    description: Open the weapons GUI and manage blacklist zones.
+    default: op
+  ffaweapons.bbc:
+    description: Wield the BBC Blade and its admin blast ability.
+    default: op

@@ -1,0 +1,57 @@
+# How long both players stay tagged after their latest valid PvP hit.
+combat:
+  duration-seconds: 15
+  ignored-worlds: []
+  ignored-gamemodes:
+    - CREATIVE
+    - SPECTATOR
+
+# WorldGuard is optional. Region IDs are case-insensitive. You may also use
+# "world:region" to match a region only in one world.
+worldguard:
+  enabled: true
+  required: false
+  # Hits involving a player in one of these regions do not create/refresh tags.
+  ignored-regions:
+    - spawn
+  # A player who is already tagged cannot enter one of these regions.
+  blocked-regions:
+    - spawn
+  prevent-tagged-entry: true
+
+bossbar:
+  enabled: true
+  title: '<red><bold>⚔ COMBAT</bold> <dark_gray>• <white><seconds>s'
+  color: RED
+  overlay: PROGRESS
+  update-ticks: 2
+
+logout:
+  enabled: true
+  punishment: KILL
+  broadcast: '<red><player> logged out during combat and was killed.'
+  # Intentional admin/restart kicks are not combat logging. Timeouts still are.
+  ignored-kick-causes:
+    - KICK_COMMAND
+    - RESTART_COMMAND
+
+restrictions:
+  # Prevent escape/teleport commands while the player is combat tagged.
+  block-commands: true
+  blocked-commands:
+    - spawn
+    - hub
+    - lobby
+    - home
+    - warp
+    - tpa
+    - tpaccept
+    - rtp
+    - back
+    - afk
+
+messages:
+  tagged: '<red>You are in combat with <white><opponent></white>! Do not log out.'
+  expired: '<green>You are no longer in combat.'
+  blocked-region: '<red>You cannot enter that region while in combat.'
+  blocked-command: '<red>You cannot use that command while in combat.'
